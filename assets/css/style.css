@@ -1,0 +1,150 @@
+@import './base.css' ;
+
+.category , .product{
+    background-color: #fff;
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    margin: 10px;
+    text-align: center;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(179, 177, 175);
+}
+.categories , .products {
+    margin: 20px 10px 10px 10px;
+}
+.header2{
+text-decoration-line: underline;
+text-shadow: #fff;
+text-size-adjust: 50px;
+padding : 30px 30px 30px 150px;
+color: rgb(0, 0, 0);
+width: 70%;
+}
+
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .logo{
+    width: 30%;
+}
+.navbar .list{
+    flex-grow: 1;
+}
+.list ul{
+    list-style-type: none ;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end
+    ;
+}
+
+.list ul a {
+    text-decoration: none ;
+    color: white;
+    text-transform: capitalize;
+    
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+.Products h2{
+text-decoration-line: underline;
+text-shadow: #fff;
+text-size-adjust: 50px;
+padding : 30px 30px 30px 30px;
+color: rgb(0, 0, 0);
+width: 70%;
+}
+
+.loader-container{
+display: none;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+position: fixed;
+background-color:rgba(0, 0, 0, .5);
+}
+.active{
+    display: flex;
+}
+.loading{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border : 5px solid #000 ; 
+    border-bottom:transparent ;
+    animation: rotate 1s infinite linear;
+
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.scrollNavbar{
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 10px 15px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    cursor: not-allowed;
+    border-color: #ddd;
+}
